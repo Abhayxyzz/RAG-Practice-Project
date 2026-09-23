@@ -4,11 +4,11 @@ from langchain_text_splitters import CharacterTextSplitter
 
 splitter = CharacterTextSplitter(
     separator= "",
-    chunk_size = 1000,
+    chunk_size = 20,
     chunk_overlap=1
 )
 
-data = TextLoader("document loaders/notes.txt")
+data = TextLoader("Document loaders/notes.txt")
 
 docs = data.load()
 
